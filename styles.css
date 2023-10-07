@@ -1,0 +1,240 @@
+/*
+#007d7b = aquagreen
+#000000 = black
+#ffffff = white
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+html {
+    background-color: #000000;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+main p {
+    margin: 0px 0px 0px 6px;
+}
+
+h1, h2, nav, input, label {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3em;
+    background-color: #ffffff;
+    color: #007d7b;  
+}
+
+h2 {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#contact {
+    color: #ffffff;
+}
+
+h3 {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+figure {
+    position: relative
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+figcaption {
+    text-transform: uppercase;
+    left: 150px;
+}
+
+#chile figcaption, #hawaii figcaption, #italy figcaption, #moab figcaption {
+    position: relative;
+    bottom: 30px;
+}
+
+#guatemala figcaption, #rocky figcaption, #switzerland figcaption, #uk figcaption, #usa figcaption, #wyoming figcaption {
+    position: relative;
+    bottom: 275px;
+}
+
+#iran figcaption, #ireland figcaption {
+    position: relative;
+    bottom: 622px;
+}
+
+#chile figcaption, #guatemala figcaption, #hawaii figcaption, #moab figcaption, #wyoming figcaption {
+    color: #ffffff;
+}
+
+#iran figcaption, #ireland figcaption, #italy figcaption, #rocky figcaption, #switzerland figcaption, #uk figcaption, #usa figcaption {
+    color: #000000;
+}
+
+label, input {
+    display: block;
+    width: 80%;
+    position: relative;
+}
+
+label {
+    margin: 8px 0px 0px 8px;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #007d7b;
+}
+
+input[type=submit] {
+    border: 0px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #007d7b;
+    padding: 10px;
+    width: 50%;
+    margin: 15px 0px 45px 0px;
+}
+
+footer p, footer small {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    margin: 0px 0px 10px 0px;
+}
+
+@media screen and (max-width: 485px) {
+    body {
+        margin: 0px 10px;
+    }
+
+    form {
+        width: 250px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 485px) {
+    body {
+        margin: 0px 20px;
+        width: 510px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        width: 485px;
+        padding: 10px;
+    }
+
+    label, input {
+        left: 40px;
+    }
+
+    input[type=submit] {
+        left: 105px;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    body {
+        margin: 0px 80px;
+        width: 920px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .photos {
+        display: grid;
+        grid-template-columns: 426px 426px;
+    }
+
+    form {
+        width: 880px;
+        padding: 10px;
+    }
+
+    label, input {
+        left: 80px;
+    }
+
+    input[type=submit] {
+        left: 210px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        margin: 0px 150px;
+        width: 1360px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: right;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 426px 426px 426px;
+    }
+
+    form {
+        width: 1300px;
+        padding: 10px;
+    }
+
+    label, input {
+        left: 120px;
+    }
+
+    input[type=submit] {
+        left: 315px;
+    }
+}
